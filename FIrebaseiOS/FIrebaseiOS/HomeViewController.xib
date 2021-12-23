@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FirebaseSetup" customModuleProvider="target">
+            <connections>
+                <outlet property="btnProfile" destination="zdQ-FF-d5H" id="ZFT-89-dza"/>
+                <outlet property="btnsignIn" destination="UsD-eo-8bd" id="gAy-h2-rXU"/>
+                <outlet property="collectionviewHighlights" destination="pi0-TP-ocu" id="ZRl-RZ-uPK"/>
+                <outlet property="tblItems" destination="fky-pL-4NE" id="SMb-HU-Jx5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pi0-TP-ocu">
+                    <rect key="frame" x="20" y="96" width="375" height="229"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6bE-ut-Iah">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fky-pL-4NE">
+                    <rect key="frame" x="20" y="346" width="374" height="510"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdQ-FF-d5H">
+                    <rect key="frame" x="14" y="44" width="30" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="9m7-bP-g45"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" image="person.fill" catalog="system"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-eo-8bd">
+                    <rect key="frame" x="330" y="45" width="64" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="tintColor"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Sign In">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="0.0"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.93550127256467808" green="0.94328004121780396" blue="0.8986931408816472" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="pi0-TP-ocu" firstAttribute="top" secondItem="zdQ-FF-d5H" secondAttribute="bottom" constant="21" id="0L4-FT-2iT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UsD-eo-8bd" secondAttribute="trailing" constant="20" id="220-gL-Vb8"/>
+                <constraint firstItem="UsD-eo-8bd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="1" id="5PC-SE-wsB"/>
+                <constraint firstItem="zdQ-FF-d5H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BTs-SS-YgJ"/>
+                <constraint firstItem="zdQ-FF-d5H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="GcC-UH-Pa5"/>
+                <constraint firstItem="pi0-TP-ocu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="52" id="LVw-lF-I3I"/>
+                <constraint firstItem="pi0-TP-ocu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UxR-ii-2ar"/>
+                <constraint firstItem="fky-pL-4NE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Xhz-hw-mXs"/>
+                <constraint firstItem="fky-pL-4NE" firstAttribute="top" secondItem="pi0-TP-ocu" secondAttribute="bottom" constant="21" id="Zdo-TF-0NF"/>
+                <constraint firstItem="pi0-TP-ocu" firstAttribute="top" secondItem="UsD-eo-8bd" secondAttribute="bottom" constant="21" id="dem-a7-mMa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fky-pL-4NE" secondAttribute="trailing" constant="20" id="s8m-cR-A7f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pi0-TP-ocu" secondAttribute="trailing" constant="19" id="sQu-mo-TPx"/>
+                <constraint firstItem="fky-pL-4NE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="302" id="snc-s2-yat"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fky-pL-4NE" secondAttribute="bottom" constant="6" id="svW-Zq-R6a"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
